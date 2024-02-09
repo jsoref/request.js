@@ -5,7 +5,7 @@ import { VERSION } from "./version.js";
 import withDefaults from "./with-defaults.js";
 
 export const request = withDefaults(endpoint, {
-  headers: {
+    headers: {
     "user-agent": `octokit-request.js/${VERSION} ${getUserAgent()}`,
   },
 });
